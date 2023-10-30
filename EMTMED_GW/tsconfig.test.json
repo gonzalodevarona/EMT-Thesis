@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig",
+  "include": ["src/main/webapp/app", "src/main/webapp/microfrontend"],
+  "exclude": [],
+  "compilerOptions": {
+    "paths": {
+      "@emtmed/*": ["src/main/webapp/microfrontends/*"],
+      "app/*": ["src/main/webapp/app/*"]
+    },
+    "types": ["jest", "webpack-env"]
+  }
+}

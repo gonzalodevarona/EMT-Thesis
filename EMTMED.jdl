@@ -1,0 +1,128 @@
+
+application {
+  config {
+    baseName EMTMED_GW
+    applicationType gateway
+    packageName com.emt.med.gateway
+    authenticationType oauth2
+    prodDatabaseType postgresql
+    buildTool maven
+    serviceDiscoveryType consul
+    cacheProvider hazelcast
+    messageBroker kafka
+    enableTranslation true
+    enableHibernateCache true
+    serverPort 8091
+    testFrameworks [cypress]
+    nativeLanguage es
+    languages [en]
+    clientFramework react
+    microfrontends [EMTMED]
+  }
+}
+
+application {
+  config {
+    baseName EMTMED
+    applicationType microservice
+    packageName com.emt.med
+    authenticationType oauth2
+    buildTool maven
+    serviceDiscoveryType consul
+    devDatabaseType postgresql
+    prodDatabaseType postgresql
+    cacheProvider hazelcast
+    messageBroker kafka
+    enableTranslation true
+    enableHibernateCache true
+    serverPort 8090
+    testFrameworks [cypress]
+    nativeLanguage es
+    languages [en]
+    clientFramework react
+  }
+  entities *
+}
+
+
+enum PharmacyCategory{
+	PRINCIPAL, SECONDARY
+}
+
+
+entity Location {
+	name String,
+}
+
+
+entity Order {
+	practitioner Integer,
+    authoredOn LocalDate,
+    status OrderStatus
+}
+
+enum OrderStatus{
+	OPEN, COMPLETED, CANCELLED
+}
+
+
+enum InventoryOrderType{
+	REQUEST, DELIVERY
+}
+
+
+entity Supply {
+	name String,
+	weight Double,
+	quantity Integer,
+}
+
+entity CountingUnit{
+	name String,
+}
+
+entity WeightUnit{
+	name String,
+}
+
+
+
+entity Field{
+	value String,
+    name String
+}
+
+
+entity Batch {
+    manufacturer String,
+    administrationRoute String,
+    expirationDate LocalDate,
+    status BatchStatus
+    
+}
+
+enum BatchStatus {
+	RED, YELLOW, GREEN
+}
+
+
+
+
+relationship OneToMany {
+  Location{Supply(name)} to Supply{Location(name)}
+  Order{Supply(name)} to Supply
+  WeightUnit{Supply(name)} to Supply{WeightUnit(name)}
+  CountingUnit{Supply(name)} to Supply{CountingUnit(name)}
+  Supply to Batch{Supply(name)}
+  
+}
+
+relationship ManyToMany {
+  Supply{Field(name)} to Field{Supply(name)}
+  Order to Field
+}
+
+dto * with mapstruct
+
+service * with serviceImpl
+

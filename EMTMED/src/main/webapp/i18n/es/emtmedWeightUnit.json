@@ -1,0 +1,25 @@
+{
+  "emtmedApp": {
+    "emtmedWeightUnit": {
+      "home": {
+        "title": "Weight Units",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Weight Unit",
+        "createOrEditLabel": "Crear o editar Weight Unit",
+        "notFound": "Ningún Weight Units encontrado"
+      },
+      "created": "Un nuevo Weight Unit ha sido creado con el identificador {{ param }}",
+      "updated": "Un Weight Unit ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Weight Unit ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Weight Unit {{ id }}?"
+      },
+      "detail": {
+        "title": "Weight Unit"
+      },
+      "id": "ID",
+      "name": "Name",
+      "supply": "Supply"
+    }
+  }
+}

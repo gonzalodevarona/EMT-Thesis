@@ -1,0 +1,25 @@
+{
+  "emtmedApp": {
+    "emtmedCountingUnit": {
+      "home": {
+        "title": "Counting Units",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Counting Unit",
+        "createOrEditLabel": "Create or edit a Counting Unit",
+        "notFound": "No Counting Units found"
+      },
+      "created": "A new Counting Unit is created with identifier {{ param }}",
+      "updated": "A Counting Unit is updated with identifier {{ param }}",
+      "deleted": "A Counting Unit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Counting Unit {{ id }}?"
+      },
+      "detail": {
+        "title": "Counting Unit"
+      },
+      "id": "ID",
+      "name": "Name",
+      "supply": "Supply"
+    }
+  }
+}

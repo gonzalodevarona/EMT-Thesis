@@ -1,0 +1,47 @@
+{
+  "applications": ["EMTMED"],
+  "changelogDate": "20231029231102",
+  "clientRootFolder": "EMTMED",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "jhi_order",
+  "fields": [
+    {
+      "fieldName": "practitioner",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "authoredOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "OrderStatus",
+      "fieldValues": "OPEN,COMPLETED,CANCELLED"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "EMTMED",
+  "name": "Order",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "supply",
+      "otherEntityRelationshipName": "order",
+      "relationshipName": "supply",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "order",
+      "ownerSide": true,
+      "relationshipName": "field",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

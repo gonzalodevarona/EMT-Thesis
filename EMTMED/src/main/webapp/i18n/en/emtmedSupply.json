@@ -1,0 +1,32 @@
+{
+  "emtmedApp": {
+    "emtmedSupply": {
+      "home": {
+        "title": "Supplies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Supply",
+        "createOrEditLabel": "Create or edit a Supply",
+        "notFound": "No Supplies found"
+      },
+      "created": "A new Supply is created with identifier {{ param }}",
+      "updated": "A Supply is updated with identifier {{ param }}",
+      "deleted": "A Supply is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Supply {{ id }}?"
+      },
+      "detail": {
+        "title": "Supply"
+      },
+      "id": "ID",
+      "name": "Name",
+      "weight": "Weight",
+      "quantity": "Quantity",
+      "batch": "Batch",
+      "field": "Field",
+      "location": "Location",
+      "order": "Order",
+      "weightUnit": "Weight Unit",
+      "countingUnit": "Counting Unit"
+    }
+  }
+}

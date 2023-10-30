@@ -1,0 +1,43 @@
+{
+  "applications": ["EMTMED"],
+  "changelogDate": "20231029230702",
+  "clientRootFolder": "EMTMED",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "field",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "EMTMED",
+  "name": "Field",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "supply",
+      "otherEntityRelationshipName": "field",
+      "ownerSide": false,
+      "relationshipName": "supply",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "field",
+      "ownerSide": false,
+      "relationshipName": "order",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

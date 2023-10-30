@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Supply.
+    -->
+    <changeSet id="20231029230602-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="supply_id"
+                                 baseTableName="rel_supply__field"
+                                 constraintName="fk_rel_supply__field__supply_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="supply"/>
+
+        <addForeignKeyConstraint baseColumnNames="field_id"
+                                 baseTableName="rel_supply__field"
+                                 constraintName="fk_rel_supply__field__field_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="field"/>
+
+        <addForeignKeyConstraint baseColumnNames="location_id"
+                                 baseTableName="supply"
+                                 constraintName="fk_supply__location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="order_id"
+                                 baseTableName="supply"
+                                 constraintName="fk_supply__order_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_order"/>
+
+        <addForeignKeyConstraint baseColumnNames="weight_unit_id"
+                                 baseTableName="supply"
+                                 constraintName="fk_supply__weight_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="weight_unit"/>
+
+        <addForeignKeyConstraint baseColumnNames="counting_unit_id"
+                                 baseTableName="supply"
+                                 constraintName="fk_supply__counting_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="counting_unit"/>
+    </changeSet>
+</databaseChangeLog>

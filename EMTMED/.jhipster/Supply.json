@@ -1,0 +1,73 @@
+{
+  "applications": ["EMTMED"],
+  "changelogDate": "20231029230602",
+  "clientRootFolder": "EMTMED",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "supply",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "EMTMED",
+  "name": "Supply",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "batch",
+      "otherEntityRelationshipName": "supply",
+      "relationshipName": "batch",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "supply",
+      "ownerSide": true,
+      "relationshipName": "field",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "supply",
+      "relationshipName": "location",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "supply",
+      "relationshipName": "order",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "weightUnit",
+      "otherEntityRelationshipName": "supply",
+      "relationshipName": "weightUnit",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "countingUnit",
+      "otherEntityRelationshipName": "supply",
+      "relationshipName": "countingUnit",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

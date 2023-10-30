@@ -1,0 +1,44 @@
+{
+  "applications": ["EMTMED"],
+  "changelogDate": "20231029231002",
+  "clientRootFolder": "EMTMED",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "batch",
+  "fields": [
+    {
+      "fieldName": "manufacturer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "administrationRoute",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expirationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "BatchStatus",
+      "fieldValues": "RED,YELLOW,GREEN"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "EMTMED",
+  "name": "Batch",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "supply",
+      "otherEntityRelationshipName": "batch",
+      "relationshipName": "supply",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

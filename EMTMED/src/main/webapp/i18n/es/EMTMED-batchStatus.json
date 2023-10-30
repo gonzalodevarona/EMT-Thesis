@@ -1,0 +1,10 @@
+{
+  "emtmedApp": {
+    "BatchStatus": {
+      "null": "",
+      "RED": "RED",
+      "YELLOW": "YELLOW",
+      "GREEN": "GREEN"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "applications": ["EMTMED"],
+  "changelogDate": "20231029230502",
+  "clientRootFolder": "EMTMED",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "weight_unit",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "EMTMED",
+  "name": "WeightUnit",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "supply",
+      "otherEntityRelationshipName": "weightUnit",
+      "relationshipName": "supply",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

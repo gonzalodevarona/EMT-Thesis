@@ -1,0 +1,10 @@
+{
+  "emtmedApp": {
+    "OrderStatus": {
+      "null": "",
+      "OPEN": "OPEN",
+      "COMPLETED": "COMPLETED",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

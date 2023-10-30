@@ -1,0 +1,28 @@
+{
+  "emtmedApp": {
+    "emtmedBatch": {
+      "home": {
+        "title": "Batches",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Batch",
+        "createOrEditLabel": "Crear o editar Batch",
+        "notFound": "Ningún Batches encontrado"
+      },
+      "created": "Un nuevo Batch ha sido creado con el identificador {{ param }}",
+      "updated": "Un Batch ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Batch ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Batch {{ id }}?"
+      },
+      "detail": {
+        "title": "Batch"
+      },
+      "id": "ID",
+      "manufacturer": "Manufacturer",
+      "administrationRoute": "Administration Route",
+      "expirationDate": "Expiration Date",
+      "status": "Status",
+      "supply": "Supply"
+    }
+  }
+}

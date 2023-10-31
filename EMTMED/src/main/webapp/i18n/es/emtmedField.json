@@ -2,26 +2,26 @@
   "emtmedApp": {
     "emtmedField": {
       "home": {
-        "title": "Fields",
+        "title": "Campos",
         "refreshListLabel": "Refrescar lista",
-        "createLabel": "Crear nuevo Field",
-        "createOrEditLabel": "Crear o editar Field",
-        "notFound": "Ningún Fields encontrado"
+        "createLabel": "Crear nuevo Campo",
+        "createOrEditLabel": "Crear o editar Campo",
+        "notFound": "Ningún Campo encontrado"
       },
-      "created": "Un nuevo Field ha sido creado con el identificador {{ param }}",
-      "updated": "Un Field ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Field ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo Campo ha sido creado con el identificador {{ param }}",
+      "updated": "Un Campo ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Campo ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Field {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el Campo con el identificador {{ id }}?"
       },
       "detail": {
-        "title": "Field"
+        "title": "Campo"
       },
       "id": "ID",
-      "value": "Value",
-      "name": "Name",
-      "supply": "Supply",
-      "order": "Order"
+      "value": "Valor",
+      "name": "Nombre",
+      "supply": "Suministro",
+      "order": "Orden"
     }
   }
 }

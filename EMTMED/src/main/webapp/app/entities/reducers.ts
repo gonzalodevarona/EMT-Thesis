@@ -1,4 +1,5 @@
 import weightUnit from 'app/entities/EMTMED/weight-unit/weight-unit.reducer';
+import medicationBatch from 'app/entities/EMTMED/medication-batch/medication-batch.reducer';
 import supply from 'app/entities/EMTMED/supply/supply.reducer';
 import field from 'app/entities/EMTMED/field/field.reducer';
 import location from 'app/entities/EMTMED/location/location.reducer';
@@ -15,6 +16,7 @@ const entitiesReducers = {
   countingUnit,
   batch,
   order,
+  medicationBatch
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
 };
 

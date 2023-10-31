@@ -1,4 +1,4 @@
-package com.emt.med.web.rest.vm;
+package com.emt.med.web.rest;
 
 import com.emt.med.repository.MedicationBatchRepository;
 import com.emt.med.service.MedicationBatchService;
@@ -6,6 +6,7 @@ import com.emt.med.service.dto.MedicationBatchDTO;
 import com.emt.med.web.rest.errors.BadRequestAlertException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tech.jhipster.web.util.ResponseUtil;
@@ -28,6 +29,9 @@ public class MedicationBatchResource {
 
     private static final String ENTITY_NAME = "emtmedMedicationBatch";
 
+    @Value("${jhipster.clientApp.name}")
+    private String applicationName;
+
 
     private final MedicationBatchService medicationBatchService;
 
@@ -45,7 +49,7 @@ public class MedicationBatchResource {
      * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new medicationBatchDTO, or with status {@code 400 (Bad Request)} if the medicationBatch has already an ID.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PostMapping("/medicationBatches")
+    @PostMapping("/medication-batches")
     public ResponseEntity<MedicationBatchDTO> createMedicationBatch(@RequestBody MedicationBatchDTO medicationBatchDTO) throws URISyntaxException {
         log.debug("REST request to save MedicationBatch : {}", medicationBatchDTO);
         if (medicationBatchDTO.getId() != null) {
@@ -67,7 +71,7 @@ public class MedicationBatchResource {
      * or with status {@code 500 (Internal Server Error)} if the medicationBatchDTO couldn't be updated.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PutMapping("/medicationBatches/{id}")
+    @PutMapping("/medication-batches/{id}")
     public ResponseEntity<MedicationBatchDTO> updateMedicationBatch(
         @PathVariable(value = "id", required = false) final Long id,
         @RequestBody MedicationBatchDTO medicationBatchDTO
@@ -101,7 +105,7 @@ public class MedicationBatchResource {
      * or with status {@code 500 (Internal Server Error)} if the medicationBatchDTO couldn't be updated.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PatchMapping(value = "/medicationBatches/{id}", consumes = { "application/json", "application/merge-patch+json" })
+    @PatchMapping(value = "/medication-batches/{id}", consumes = { "application/json", "application/merge-patch+json" })
     public ResponseEntity<MedicationBatchDTO> partialUpdateMedicationBatch(
         @PathVariable(value = "id", required = false) final Long id,
         @RequestBody MedicationBatchDTO medicationBatchDTO
@@ -131,7 +135,7 @@ public class MedicationBatchResource {
      * @param eagerload flag to eager load entities from relationships (This is applicable for many-to-many).
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of medicationBatches in body.
      */
-    @GetMapping("/medicationBatches")
+    @GetMapping("/medication-batches")
     public List<MedicationBatchDTO> getAllMedicationBatches(@RequestParam(required = false, defaultValue = "false") boolean eagerload) {
         log.debug("REST request to get all MedicationBatches");
         return medicationBatchService.findAll();
@@ -143,7 +147,7 @@ public class MedicationBatchResource {
      * @param id the id of the medicationBatchDTO to retrieve.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the medicationBatchDTO, or with status {@code 404 (Not Found)}.
      */
-    @GetMapping("/medicationBatches/{id}")
+    @GetMapping("/medication-batches/{id}")
     public ResponseEntity<MedicationBatchDTO> getMedicationBatch(@PathVariable Long id) {
         log.debug("REST request to get MedicationBatch : {}", id);
         Optional<MedicationBatchDTO> medicationBatchDTO = medicationBatchService.findOne(id);
@@ -156,7 +160,7 @@ public class MedicationBatchResource {
      * @param id the id of the medicationBatchDTO to delete.
      * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
      */
-    @DeleteMapping("/medicationBatches/{id}")
+    @DeleteMapping("/medication-batches/{id}")
     public ResponseEntity<Void> deleteMedicationBatch(@PathVariable Long id) {
         log.debug("REST request to delete MedicationBatch : {}", id);
         medicationBatchService.delete(id);

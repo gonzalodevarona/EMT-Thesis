@@ -2,27 +2,27 @@
   "emtmedApp": {
     "emtmedBatch": {
       "home": {
-        "title": "Batches",
+        "title": "Lotes",
         "refreshListLabel": "Refrescar lista",
-        "createLabel": "Crear nuevo Batch",
-        "createOrEditLabel": "Crear o editar Batch",
-        "notFound": "Ningún Batches encontrado"
+        "createLabel": "Crear nuevo Lote",
+        "createOrEditLabel": "Crear o editar Lote",
+        "notFound": "Ningún Lotes encontrado"
       },
-      "created": "Un nuevo Batch ha sido creado con el identificador {{ param }}",
-      "updated": "Un Batch ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Batch ha sido eliminado con el identificador {{ param }}",
+      "created": "Un nuevo Lote ha sido creado con el identificador {{ param }}",
+      "updated": "Un Lote ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Lote ha sido eliminado con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Batch {{ id }}?"
+        "question": "¿Seguro que quiere eliminar el Lote con identificador{{ id }}?"
       },
       "detail": {
-        "title": "Batch"
+        "title": "Lote"
       },
       "id": "ID",
-      "manufacturer": "Manufacturer",
-      "administrationRoute": "Administration Route",
-      "expirationDate": "Expiration Date",
-      "status": "Status",
-      "supply": "Supply"
+      "manufacturer": "Fabricante",
+      "administrationRoute": "Vía de Administración",
+      "expirationDate": "Fecha de Vencimiento",
+      "status": "Estado",
+      "supply": "Suministro"
     }
   }
 }

@@ -7,13 +7,14 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
-        "emtmedWeightUnit": "Weight Unit",
+        "emtmedWeightUnit": "Unidad de Peso",
         "emtmedSupply": "Supply",
-        "emtmedField": "Field",
-        "emtmedLocation": "Location",
-        "emtmedCountingUnit": "Counting Unit",
-        "emtmedBatch": "Batch",
-        "emtmedOrder": "Order",
+        "emtmedField": "Campo adicional",
+        "emtmedLocation": "Ubicación",
+        "emtmedCountingUnit": "Unidad de Conteo",
+        "emtmedBatch": "Lote",
+        "emtmedOrder": "Orden",
+        "emtmedMedicationBatch": "Lote de Medicamento",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

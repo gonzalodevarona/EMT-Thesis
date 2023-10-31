@@ -2,24 +2,24 @@
   "emtmedApp": {
     "emtmedCountingUnit": {
       "home": {
-        "title": "Counting Units",
+        "title": "Unidades de Conteo",
         "refreshListLabel": "Refrescar lista",
-        "createLabel": "Crear nuevo Counting Unit",
-        "createOrEditLabel": "Crear o editar Counting Unit",
-        "notFound": "Ningún Counting Units encontrado"
+        "createLabel": "Crear nueva Unidad de Conteo",
+        "createOrEditLabel": "Crear o editar Unidad de Conteo",
+        "notFound": "Ninguna Unidad de Conteo encontrada"
       },
-      "created": "Un nuevo Counting Unit ha sido creado con el identificador {{ param }}",
-      "updated": "Un Counting Unit ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Counting Unit ha sido eliminado con el identificador {{ param }}",
+      "created": "Una nuevo Unidad de Conteo ha sido creada con el identificador {{ param }}",
+      "updated": "Una Unidad de Conteo ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una Unidad de Conteo ha sido eliminada con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Counting Unit {{ id }}?"
+        "question": "¿Seguro que quiere eliminar la Unidad de Conteo con el identificador {{ id }}?"
       },
       "detail": {
-        "title": "Counting Unit"
+        "title": "Unidad de Conteo"
       },
       "id": "ID",
-      "name": "Name",
-      "supply": "Supply"
+      "name": "Nombre",
+      "supply": "Suministro"
     }
   }
 }

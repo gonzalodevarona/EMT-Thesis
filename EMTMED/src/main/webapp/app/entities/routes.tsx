@@ -15,6 +15,7 @@ import Field from './EMTMED/field';
 import Location from './EMTMED/location';
 import CountingUnit from './EMTMED/counting-unit';
 import Batch from './EMTMED/batch';
+import MedicationBatch from './EMTMED/medication-batch';
 import Order from './EMTMED/order';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
@@ -32,6 +33,7 @@ export default () => {
         <Route path="/counting-unit/*" element={<CountingUnit />} />
         <Route path="/batch/*" element={<Batch />} />
         <Route path="/order/*" element={<Order />} />
+        <Route path="/medication-batch/*" element={<MedicationBatch />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

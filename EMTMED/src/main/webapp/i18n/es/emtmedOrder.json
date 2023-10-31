@@ -2,27 +2,27 @@
   "emtmedApp": {
     "emtmedOrder": {
       "home": {
-        "title": "Orders",
+        "title": "Orden",
         "refreshListLabel": "Refrescar lista",
-        "createLabel": "Crear nuevo Order",
-        "createOrEditLabel": "Crear o editar Order",
-        "notFound": "Ningún Orders encontrado"
+        "createLabel": "Crear nueva Orden",
+        "createOrEditLabel": "Crear o editar Orden",
+        "notFound": "Ninguna Orden encontrada"
       },
-      "created": "Un nuevo Order ha sido creado con el identificador {{ param }}",
-      "updated": "Un Order ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Order ha sido eliminado con el identificador {{ param }}",
+      "created": "Una nueva Orden ha sido creada con el identificador {{ param }}",
+      "updated": "Una Orden ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una Orden ha sido eliminada con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Order {{ id }}?"
+        "question": "¿Seguro que quiere eliminar la Orden con el identificador {{ id }}?"
       },
       "detail": {
-        "title": "Order"
+        "title": "Orden"
       },
       "id": "ID",
       "practitioner": "Practitioner",
-      "authoredOn": "Authored On",
-      "status": "Status",
-      "supply": "Supply",
-      "field": "Field"
+      "authoredOn": "Fecha de Autorización",
+      "status": "Estado",
+      "supply": "Suministro",
+      "field": "Campo"
     }
   }
 }

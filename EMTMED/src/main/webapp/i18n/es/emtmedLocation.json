@@ -2,24 +2,24 @@
   "emtmedApp": {
     "emtmedLocation": {
       "home": {
-        "title": "Locations",
+        "title": "Ubicaciones",
         "refreshListLabel": "Refrescar lista",
-        "createLabel": "Crear nuevo Location",
-        "createOrEditLabel": "Crear o editar Location",
-        "notFound": "Ningún Locations encontrado"
+        "createLabel": "Crear nueva Ubicación",
+        "createOrEditLabel": "Crear o editar Ubicación",
+        "notFound": "Ninguna Ubicación encontrado"
       },
-      "created": "Un nuevo Location ha sido creado con el identificador {{ param }}",
-      "updated": "Un Location ha sido actualizado con el identificador {{ param }}",
-      "deleted": "Un Location ha sido eliminado con el identificador {{ param }}",
+      "created": "Una nueva Ubicación ha sido creada con el identificador {{ param }}",
+      "updated": "Una Ubicación ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una Ubicación ha sido eliminada con el identificador {{ param }}",
       "delete": {
-        "question": "¿Seguro que quiere eliminar Location {{ id }}?"
+        "question": "¿Seguro que quiere eliminar la Ubicación con el identificador {{ id }}?"
       },
       "detail": {
-        "title": "Location"
+        "title": "Ubicación"
       },
       "id": "ID",
-      "name": "Name",
-      "supply": "Supply"
+      "name": "Nombre",
+      "supply": "Suministro"
     }
   }
 }

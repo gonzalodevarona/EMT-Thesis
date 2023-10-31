@@ -1,0 +1,30 @@
+{
+  "emtmedApp": {
+    "emtmedMedicationBatch": {
+      "home": {
+        "title": "Lotes de Medicamentos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Lote de Medicamento",
+        "createOrEditLabel": "Crear o editar Lote de Medicamento",
+        "notFound": "Ningún Lote de Medicamento encontrado"
+      },
+      "created": "Un nuevo Lote de Medicamento ha sido creado con el identificador {{ param }}",
+      "updated": "Un Lote de Medicamento ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Lote de Medicamento ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar el Lote de Medicamento con identificador {{ id }}?"
+      },
+      "detail": {
+        "title": "Lote de Medicamento"
+      },
+      "id": "ID",
+      "manufacturer": "Fabricante",
+      "administrationRoute": "Via de Administración",
+      "expirationDate": "Fecha de Vencimiento",
+      "status": "Estado",
+      "supply": "Suministro",
+      "quantity": "Cantidad",
+      "cum": "CUM"
+    }
+  }
+}
